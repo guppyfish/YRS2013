@@ -2,6 +2,45 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 { 
-	color: red;
+* {
 }
+
+body {
+	background-color: white;
+}
+
+#header { 
+	background-color: red;
+
+}
+
+#header h1 {
+
+}
+
+#content {
+	background-color: green;
+	display: block;
+}
+
+#question {
+	color: blue;
+	display: inline-block;
+}
+
+#comment_section {
+	background-color: black;
+	display: block;
+}
+
+.comment {
+	background-color: yellow;#
+	display: inline-block;
+}
+
+#footer {
+	background-color: purple;
+	clear: all;
+	display: block;
+}
+
