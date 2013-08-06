@@ -9,9 +9,8 @@ body {
 	background-color: white;
 }
 
-#header { 
+header { 
 	background-color: red;
-
 }
 
 #header h1 {
@@ -24,7 +23,7 @@ body {
 }
 
 #question {
-	color: blue;
+	background-color: blue;
 	display: inline-block;
 }
 
@@ -38,7 +37,7 @@ body {
 	display: inline-block;
 }
 
-#footer {
+footer {
 	background-color: purple;
 	clear: all;
 	display: block;
