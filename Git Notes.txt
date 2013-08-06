@@ -1,0 +1,7 @@
+git status :: see commit status
+new branch :: git checkout -b [branchname(Emma/(projectbranch)]
+which branch? :: git branch
+changing to [masterbranch] :: git checkout [master]
+stage files from files moved to directory :: git add .
+commit all with message :: git commit -am [message]
+pushing to github :: git push origin [branch]
