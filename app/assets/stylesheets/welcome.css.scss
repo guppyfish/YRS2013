@@ -3,30 +3,36 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-	background-color: white;
+	background-color:#D9D9D9;
 }
 
-header { 
-	background-color: red;
+h1{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 800;
+	color: #FFFFFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
 }
 
-#content {
-	background-color: green;
+span{
+	color: #FFFFFF;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
 }
 
-#question {
-	background-color: blue;
+a{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
 }
 
-#comment_section {
-	background-color: black;
+p{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
 }
 
-.comment {
-	background-color: yellow;
-}
 
 footer {
-	background-color: purple;
+	text-align:center;
 }
 
