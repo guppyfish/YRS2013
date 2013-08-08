@@ -1,4 +1,88 @@
-<h1>QUESTIONS!!!!</h1>
-<% @questions.each do |question| %>
-<%= link_to question.title, question %>
-<% end %>
+
+
+	<div class="row">
+  		<div class="col-lg-2 col inset_box">
+
+        	<div class="row">
+  			   <div class="col-lg-5 col-lg-offset-1">
+  					<%= image_tag 'mayank.jpg', :height => '100px', :width => '100px', :class => 'img-thumbnail img-responsive', :alt => 'Profile Photo' %>
+  			   </div>
+  			   <div class="col-lg-5 col-lg-offset-1 pull-right">
+  					<a href="#" class="subhead">Mayank Gupta</a> <br/>
+  					<a href="#" class="subhead">SETTINGS</a>
+  			  	</div>
+  	   		</div>
+
+  	   		<div class="row">
+  				  <div class="col-lg-10 col-lg-offset-1">
+          		<a type="button" class="btn btn-success btn-lg btn-block" href = "/questions">MENU</a>
+  				  </div>
+  	   		</div>
+
+          <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+              <button type="button" class="btn btn-success btn-lg btn-block">SPARK CHANGE</button>
+            </div>
+          </div>
+
+  	       <div class="row">
+  		      <div class="col-lg-10 col-lg-offset-1" logout>
+              <a href= "/" type="button" class="btn btn-default btn-lg btn-block" style="background-color:rgb(160,29,63);margin-top:50px;">LOGOUT</a>
+  		      </div>
+  	       </div>
+
+    </div>
+
+  		<div class="col-lg-10">
+
+        <div class="row">
+
+          <div class="col-lg-9 col-lg-offset-1">
+            <h2>Stand up. Speak out. Spark change.</h2>
+          </div>
+
+        </div>
+
+        <div class="row glyphmenu">
+          <div class="col-lg-2 col-lg-offset-1">
+            <%= link_to image_tag("police.png", :width => "200px", :height => "200px", :class =>"img-circle"), "/questions/1" %>
+          </div>
+          <div class="col-lg-2 col-lg-offset-1">
+            <%= link_to image_tag("plane.png", :width => "200px", :height => "200px", :class =>"img-circle"), "/questions/2" %>
+          </div>
+          <div class="col-lg-2 col-lg-offset-1">
+            <%= link_to image_tag("heart.png", :width => "200px", :height => "200px", :class =>"img-circle"), "/questions/3" %>
+          </div>
+        </div>
+
+        <div class="row glyphtitle">
+
+          <div class="col-lg-3 col-lg-offset-1">
+            <div class="row">
+              <div class="col-lg-offset-3">
+                <h3>Crime</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="row">
+              <div class="col-lg-offset-2">
+                <h3>Immigration</h3>
+              </div>  
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="row">
+              <div class="col-lg-offset-1">
+                <h3>Gay Marriage</h3>
+              </div>  
+            </div>
+          </div>
+
+        </div>
+
+  		</div>
+
+	</div>

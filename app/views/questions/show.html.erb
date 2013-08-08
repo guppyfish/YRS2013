@@ -1,5 +1,105 @@
-<h1>RESULTS!!!!</h1>
-<h1><%= @question.title %></h1>
-<% @question.results.each do |result| %>
-<p><%=result.title %> <%=result.sixteen_24_result%>%</p>
-<% end %>
+
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        $.getJSON(window.location, function(data){
+			var data_table = google.visualization.arrayToDataTable(data)
+
+	        var options = {
+	          
+	        };
+
+	        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+	        chart.draw(data_table, options);
+        });
+
+      }
+    </script>
+  </head>
+<body>
+
+
+
+	<div class="row">
+  		<div class="col-lg-2 col inset_box">
+
+        	<div class="row">
+  			   <div class="col-lg-5 col-lg-offset-1">
+  					<%= image_tag 'mayank.jpg', :height => '100px', :width => '100px', :class => 'img-thumbnail img-responsive', :alt => 'Profile Photo' %>
+  			   </div>
+  			   <div class="col-lg-5 col-lg-offset-1 pull-right">
+  					<a href="#" class="subhead">Mayank Gupta</a> <br/>
+  					<a href="#" class="subhead">SETTINGS</a>
+  			  	</div>
+  	   		</div>
+
+  	   		<div class="row">
+  				  <div class="col-lg-10 col-lg-offset-1">
+          		<a type="button" class="btn btn-success btn-lg btn-block" href = "/questions">MENU</a>
+  				  </div>
+  	   		</div>
+
+          <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+              <button type="button" class="btn btn-success btn-lg btn-block">SPARK CHANGE</button>
+            </div>
+          </div>
+
+  	       <div class="row">
+  		      <div class="col-lg-10 col-lg-offset-1" logout>
+              <a href= "/" type="button" class="btn btn-default btn-lg btn-block" style="background-color:rgb(160,29,63);margin-top:50px;">LOGOUT</a>
+  		      </div>
+  	       </div>
+
+    </div>
+
+  		<div class="col-lg-10">
+
+        <div class="row">
+          <div id="q_container" class="panel">
+            <h2 class="text-success">
+              <%= @question.title %>
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div id="p_container" class= "panel">
+            <div id="chart_div" style="width: 1350px; height: 750px;"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="c_container" style = "margin-left: 50% margin-right: 50%">
+            <script>
+				var idcomments_acct = 'ade3ca17da47cac8931437578c6a7e8f';
+				var idcomments_post_id;
+				var idcomments_post_url;
+			</script>
+			<span id="IDCommentsPostTitle" style="display:none"></span>
+			<script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+
+			<script>
+				var idcomments_acct = 'ade3ca17da47cac8931437578c6a7e8f';
+				var idcomments_post_id;
+				var idcomments_post_url;
+			</script>
+			<script type="text/javascript" src="http://www.intensedebate.com/js/genericLinkWrapperV2.js"></script>
+          </div>
+        </div>
+
+  		</div>
+
+	</div>
+<!--
+  		<div class="col-lg-10">
+        <div class="row">
+          <div class="well">
+            <h2 class="text-success">QUESTION</h2>
+          </div>
+        </div>
+  		</div>
+    <div id="chart_div" style="width: 1800px; height: 1000px;"></div>
+
+-->

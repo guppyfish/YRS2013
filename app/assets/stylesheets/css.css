@@ -1,0 +1,108 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+}
+
+/* Buttons */
+
+.logout {
+	margin-top: 300px;
+}
+
+/* Containers */
+
+#q_container, #p_container, #c_container {
+	margin: 8px 8px 8px 24px;
+	padding: 4px;
+}
+
+.inset_box {
+	background-color: #D7D7B2;
+	text-align: center;
+	box-shadow: 0 0 4px #aaa inset;
+	padding: 8px;
+}
+
+.glyph {
+	margin: 32px 8px 0 8px;
+}
+
+.glyphmenu {
+	margin-top: 50px;
+}
+
+.glyphtitle {
+	margin-top: 10px;
+}
+
+/* Login Box */
+
+.btn {
+	margin-top: 8px;
+}
+
+#login {
+	border-top: #000 solid 2px;
+	padding: 8px 8px 0 8px;
+}
+
+/* Fonts */
+
+.tagline {
+	color: #444;
+	font-family: Georgia;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+	position: relative;
+
+	padding: 8px;
+	display: block;
+}
+
+.subhead {
+	color: black;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	text-align: center;
+}
+
+.footer_text {
+	color: #FFF;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+}
+
+h1{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 800;
+	color: #FFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+
+h2{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 800;
+	font-size: 400%;
+}
+
+p.lead{
+	font-size: 12px;
+}
+
+ul li {
+	list-style: none;
+}
+
+/* Footer */
+
+footer {
+	text-align: center;
+}
+
+

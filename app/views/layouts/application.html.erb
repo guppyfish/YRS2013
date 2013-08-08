@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>YRS2013</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:700,300' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+	<header class="navbar-inverse navbar-static-top"> 
+        <h1 class="text-left"> SOAPBOX <%= image_tag 'Logo.png', :height => "35px", :width =>"35px"%> </h1>
+        
+	</header>
+
+	<%= yield %>
+
+
+	<footer class="navbar-inverse navbar-fixed-bottom">
+		<span class="footer_text">| SoapBox  |</span>
+	</footer>
+
 
 </body>
 </html>
