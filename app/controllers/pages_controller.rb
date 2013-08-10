@@ -7,7 +7,4 @@ class PagesController < ApplicationController
 
 	end
 
-	def root
-
-	end
 end
